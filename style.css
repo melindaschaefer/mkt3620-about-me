@@ -1,218 +1,190 @@
-:root {
-  --beige: #f0e9d8;
-  --line: #1a1a1a;
-  --text: #1a1a1a;
-  --muted: #4d4d4d;
-  --content-bg: #ffffff;
-  --edge-width: 10vw; /* 10% of screen from each edge */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
- 
-* {
-  box-sizing: border-box;
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f6f9;
 }
- 
-body {
-  margin: 0;
-  font-family: Georgia, 'Times New Roman', serif;
-  color: var(--text);
-  background-color: var(--beige);
+
+.page-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    background:white;
 }
- 
-/* -----------------------------------------------------------
-   Page frame — reserves 10% background on each side and holds
-   the bordered content column in the middle, like the wireframe
-   ----------------------------------------------------------- */
-.page-wrapper {
-  width: 100%;
-  padding-left: var(--edge-width);
-  padding-right: var(--edge-width);
+
+.header{
+    display:grid;
+    grid-template-columns:220px 1fr;
+    border:2px solid #ddd;
 }
- 
-.site-frame {
-  border-left: 1px solid var(--line);
-  border-right: 1px solid var(--line);
-  background-color: var(--content-bg);
-  display: grid;
-  grid-template-rows: auto auto auto 1fr auto;
+
+.logo-section{
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-right:2px solid #ddd;
 }
- 
-/* -----------------------------------------------------------
-   Header: logo + informational graphic
-   ----------------------------------------------------------- */
-.site-header {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  border-bottom: 1px solid var(--line);
+
+.logo-section h1{
+    color:#C8102E;
 }
- 
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-  font-size: 2.25rem;
-  font-weight: bold;
-  border-right: 1px solid var(--line);
+
+.site-description{
+    padding:20px;
 }
- 
-.header-graphic {
-  display: flex;
-  align-items: center;
-  padding: 1rem 1.5rem;
-  font-size: 0.95rem;
-  color: var(--muted);
+
+.top-nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:12px;
+    background:#C8102E;
 }
- 
-/* -----------------------------------------------------------
-   Navigation bars (populated by nav.js)
-   ----------------------------------------------------------- */
-.primary-nav,
-.secondary-nav {
-  border-bottom: 1px solid var(--line);
-  text-align: center;
-  padding: 0.5rem 1rem;
+
+.top-nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
 }
- 
-.primary-nav ul,
-.secondary-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+
+.content-layout{
+    display:grid;
+    grid-template-columns:220px 1fr 250px;
 }
- 
-.primary-nav a,
-.secondary-nav a {
-  color: var(--text);
-  text-decoration: none;
+
+.left-sidebar{
+    padding:25px;
+    border-right:1px solid #ddd;
 }
- 
-.primary-nav a:hover,
-.secondary-nav a:hover {
-  text-decoration: underline;
+
+.left-sidebar ul{
+    list-style:none;
 }
- 
-.primary-nav a[aria-current='page'],
-.secondary-nav a[aria-current='page'] {
-  font-weight: bold;
-  text-decoration: underline;
+
+.left-sidebar li{
+    margin-bottom:12px;
 }
- 
-/* -----------------------------------------------------------
-   Body: sidebar nav | main content | sticky sidebar
-   ----------------------------------------------------------- */
-.site-body {
-  display: grid;
-  grid-template-columns: 1fr 2.2fr 1fr;
+
+.left-sidebar a{
+    text-decoration:none;
+    color:#333;
 }
- 
-.sidebar-left {
-  border-right: 1px solid var(--line);
-  padding: 1.5rem;
+
+.main-content{
+    padding:25px;
 }
- 
-.sidebar-left h2 {
-  font-size: 1.1rem;
-  margin-top: 0;
+
+.hero{
+    position:relative;
+    margin-bottom:30px;
 }
- 
-.main-content {
-  padding: 1.5rem 2rem;
+
+.hero img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:10px;
 }
- 
-.hero-image {
-  border: 1px solid var(--line);
-  min-height: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-  color: var(--muted);
-  overflow: hidden;
+
+.hero-text{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    background:rgba(0,0,0,.6);
+    color:white;
+    padding:20px;
+    border-radius:10px;
 }
- 
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+section{
+    margin-bottom:40px;
 }
- 
-.main-content h1 {
-  font-size: 1.6rem;
-  margin-top: 0;
+
+section h2{
+    color:#C8102E;
+    margin-bottom:10px;
 }
- 
-.main-content p {
-  line-height: 1.6;
+
+.card{
+    background:#f7f9fc;
+    padding:20px;
+    border-left:5px solid #C8102E;
+    margin-bottom:15px;
+    border-radius:5px;
 }
- 
-.sidebar-right {
-  border-left: 1px solid var(--line);
-  padding: 1.5rem;
+
+.skills-container{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
 }
- 
-.sidebar-right h2 {
-  font-size: 1.1rem;
-  margin-top: 0;
+
+.skills-container span{
+    background:#C8102E;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
 }
- 
-.sidebar-right ul {
-  padding-left: 1.2rem;
+
+.right-sidebar{
+    padding:25px;
+    border-left:1px solid #ddd;
 }
- 
-.social-icons {
-  display: flex;
-  gap: 0.75rem;
-  margin-top: 1rem;
+
+.sticky-box{
+    position:sticky;
+    top:20px;
+    background:#f7f9fc;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
 }
- 
-.social-icons a img,
-.social-icons a svg {
-  width: 24px;
-  height: 24px;
+
+.social-links{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
 }
- 
-/* -----------------------------------------------------------
-   Footer
-   ----------------------------------------------------------- */
-.site-footer {
-  border-top: 1px solid var(--line);
-  padding: 1rem 1.5rem;
-  font-size: 0.85rem;
-  color: var(--muted);
+
+.social-links a{
+    text-decoration:none;
+    color:#C8102E;
+    font-weight:600;
 }
- 
-.site-footer a {
-  color: var(--muted);
+
+footer{
+    text-align:center;
+    background:#222;
+    color:white;
+    padding:25px;
 }
- 
-/* -----------------------------------------------------------
-   Responsive: stack columns on small screens
-   ----------------------------------------------------------- */
-@media (max-width: 800px) {
-  :root {
-    --edge-width: 3vw;
-  }
- 
-  .site-header {
-    grid-template-columns: 1fr;
-  }
- 
-  .logo {
-    border-right: none;
-    border-bottom: 1px solid var(--line);
-  }
- 
-  .site-body {
-    grid-template-columns: 1fr;
-  }
- 
-  .sidebar-left,
-  .sidebar-right {
-    border: none;
-    border-top: 1px solid var(--line);
-  }
+
+footer a{
+    color:white;
+    text-decoration:none;
+}
+
+@media(max-width:900px){
+
+    .content-layout{
+        grid-template-columns:1fr;
+    }
+
+    .left-sidebar,
+    .right-sidebar{
+        border:none;
+    }
+
+    .header{
+        grid-template-columns:1fr;
+    }
+
+    .top-nav{
+        flex-wrap:wrap;
+    }
+}
