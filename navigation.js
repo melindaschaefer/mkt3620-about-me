@@ -1,14 +1,3 @@
- nav.js — shared navigation for the site
-   Include this one file on every page:
-     <script src="nav.js" defer></script>
-   and add two empty containers where the wireframe shows the
-   nav bars:
-     <nav id="primary-nav" class="primary-nav"></nav>
-     <nav id="secondary-nav" class="secondary-nav"></nav>
-   Edit the PRIMARY_LINKS / SECONDARY_LINKS arrays below once,
-   and every page that includes this file updates together.
-   ========================================================= */
- 
 (function () {
   // ---- Edit these two lists to change the site nav everywhere ----
   const PRIMARY_LINKS = [
@@ -65,3 +54,4 @@
     initNav();
   }
 })();
+ 
