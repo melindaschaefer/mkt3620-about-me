@@ -1,10 +1,3 @@
- MKT 3620 — Page layout
-   Replicates the wireframe: logo/graphic header, primary +
-   secondary nav, hero image, main content, sticky sidebar,
-   and footer — framed by a beige background that takes up
-   10% of the viewport on the left and right edges.
-   ========================================================= */
- 
 :root {
   --beige: #f0e9d8;
   --line: #1a1a1a;
@@ -223,5 +216,3 @@ body {
     border: none;
     border-top: 1px solid var(--line);
   }
-}
- 
