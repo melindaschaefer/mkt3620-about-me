@@ -507,3 +507,227 @@ a {
         text-align: center;
     }
 }
+/* =========================================
+   PAGE CONTENT
+   ========================================= */
+
+.page-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 50px;
+}
+
+.page-content h2 {
+    color: #1e3a5f;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.page-content h3 {
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.page-content p {
+    line-height: 1.7;
+    color: #444;
+}
+
+
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+
+.about-section {
+    margin-bottom: 55px;
+}
+
+.about-section h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 12px;
+}
+
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.interest-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    background: #f8f9fb;
+}
+
+.interest-card h3 {
+    color: #1e3a5f;
+    margin-top: 0;
+}
+
+
+/* =========================================
+   EXPERIENCE PAGE
+   ========================================= */
+
+.experience-intro {
+    margin-bottom: 50px;
+}
+
+.experience-item {
+    border-left: 3px solid #1e3a5f;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+
+.experience-heading h2 {
+    margin-bottom: 5px;
+}
+
+.experience-heading h3 {
+    color: #666;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.experience-description {
+    margin-top: 20px;
+}
+
+.experience-item ul {
+    padding-left: 25px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.experience-item li {
+    margin-bottom: 7px;
+}
+
+.experience-summary {
+    background: #f5f7fa;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+
+/* =========================================
+   SKILLS PAGE
+   ========================================= */
+
+.skills-intro {
+    margin-bottom: 50px;
+}
+
+.skills-section {
+    margin-bottom: 60px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.skill-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    background: #f8f9fb;
+}
+
+.skill-card h3 {
+    color: #1e3a5f;
+    margin-top: 0;
+}
+
+.skill-card p {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   CLIFTONSTRENGTHS
+   ========================================= */
+
+.strengths-list {
+    margin-top: 30px;
+}
+
+.strength {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.strength span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e3a5f;
+    min-width: 45px;
+}
+
+.strength h3 {
+    margin: 0 0 5px 0;
+    color: #1e3a5f;
+}
+
+.strength p {
+    margin: 0;
+}
+
+
+/* =========================================
+   TOOLS / SKILL TAGS
+   ========================================= */
+
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.tools-list span {
+    border: 1px solid #1e3a5f;
+    padding: 10px 18px;
+    color: #1e3a5f;
+    background: white;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 25px;
+    color: #666;
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .page-content {
+        padding: 40px 25px;
+    }
+
+    .interest-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-item {
+        padding-left: 20px;
+    }
+
+}
