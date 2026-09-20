@@ -731,3 +731,19 @@ footer {
     }
 
 }
+.google-form {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.google-form iframe {
+    width: 100%;
+    max-width: 640px;
+    height: 740px;
+    border: none;
+}
+
+.google-form-card {
+    overflow: hidden;
+}
